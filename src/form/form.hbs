@@ -1,0 +1,24 @@
+<h2>{{title}}</h2>
+<form method="POST">
+    <input type="hidden" name="id" id="id" value"{{data.id}}" />
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" name="name" id="name" value="{{data.name}}" />
+    </div>
+    <div class="form-group">
+        <label>Surname</label>
+        <input type="text" class="form-control" name="surname" id="surname" value="{{data.surname}}" />
+    </div>
+    <div class="form-group">
+        <label>Age</label>
+        <input type="number" class="form-control" name="age" id="age" value="{{data.age}}" />
+    </div>
+    <div class="form-group">
+        <label>Job</label>
+        <input type="text" class="form-control" name="job" id="job" value="{{data.job}}" />
+    </div>
+    <div class="text-right">
+        <button type="reset" class="btn btn-primary" onclick="location.href='/';">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</form>
